@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ***********************Responsive****************************/
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-m-"] {
+        width: 100%;		
+    }
+	ul{
+    position: initial;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    /* For tablet: */
+    [class*="col-"] {
+        width: 100%;		
+    }
+	ul{
+    position: initial;
+	}
+}
+/* ***********************FIN Responsive****************************/
+
+body{
+    font-family: verdana;
+    background-color: #f2f2f2;
+}
+
+footer{
+	background-color: #1a1a1a;
+    color: white;
+    height: 150px;
+    font-size: 0px;
+    padding-top: 2%;
+    padding-bottom:2%;
+}
+
+footer strong{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+
+header{
+    padding-top: 1em;
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+#logo{
+    width:400px;
+}
+
+nav ul{
+	display: block;
+    list-style-type: none;
+	width:100%;
+    font-size: 0px;
+}
+ 
+nav li{
+    display: inline-block;
+    width: 25%;
+    font-size: 18px;
+    text-align: center;
+}
+
+nav a{
+    display: block;
+    text-decoration: none !important;
+    color: gold !important;
+    background-color: purple !important;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+nav a.active{
+	background-color: gold !important;
+	color: purple !important;
+}
+
+nav a:hover:not(.active){
+	background-color: gold !important;
+	color: purple !important;
+}
+
+footer ul{
+    display: inline-block;
+    list-style-type: none;
+    width: 25%;
+    vertical-align: top;
+    border-left: 1px black solid;
+    height: 100%;
+    background-color: black;
+}
+
+footer li{
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
