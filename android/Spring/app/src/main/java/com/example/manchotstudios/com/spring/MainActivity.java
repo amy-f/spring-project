@@ -36,6 +36,7 @@ public class  MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         //ajoute des tâches fictive dans l'array list late
         //// TODO: 2016-04-26 communiquer avec la bd
         late = new ArrayList<Task>();
