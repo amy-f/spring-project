@@ -1,5 +1,7 @@
 package com.example.manchotstudios.com.spring;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,11 +13,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -79,6 +83,23 @@ public class  MainActivity extends AppCompatActivity {
 
         TaskAdapter adaptRDV = new TaskAdapter(rdv);
         lstRDV.setAdapter(adaptRDV);
+
+        lstLate.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                AlertDialog.Builder info = new AlertDialog.Builder(MainActivity.this)
+                        .setTitle("Description de la tâche")
+                        .setMessage(late.get(position).getTitle())
+                        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+                info.show();
+            }
+        });
     }
 
 

@@ -68,7 +68,8 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lstLate">
+        android:id="@+id/lstLate"
+        android:focusable="true">
 
     </ListView>
 
@@ -83,7 +84,8 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lstToday">
+        android:id="@+id/lstToday"
+        android:focusable="true">
 
     </ListView>
 
@@ -99,7 +101,8 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lstMeet">
+        android:id="@+id/lstMeet"
+        android:focusable="true">
 
     </ListView>
 
