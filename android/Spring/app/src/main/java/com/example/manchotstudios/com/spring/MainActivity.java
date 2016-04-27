@@ -20,7 +20,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-public class MainActivity extends AppCompatActivity {
+public class  MainActivity extends AppCompatActivity {
 
     private ArrayList<Task> late;
     private ArrayList<Task> today;
