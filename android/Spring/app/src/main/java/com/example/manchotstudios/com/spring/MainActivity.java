@@ -107,7 +107,7 @@ public class  MainActivity extends AppCompatActivity {
 
     class TaskAdapter extends ArrayAdapter<Task>{
         /**
-         * Constructeur de TaskAdapter
+         * Constructeur de TaskAdaptertest
          */
         TaskAdapter(ArrayList<Task> task){super(MainActivity.this, R.layout.row,task);}
 
